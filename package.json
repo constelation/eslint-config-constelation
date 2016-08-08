@@ -6,6 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "peerDependencies": {
+    "eslint": ">=3.0.0",
+    "eslint-plugin-react": ">=6.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kylpo/eslint-config-kylpo.git"
