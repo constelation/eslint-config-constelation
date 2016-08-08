@@ -34,7 +34,6 @@ module.exports = {
     "no-invalid-regexp": 1,
     "no-obj-calls": 1,
     "no-sparse-arrays": 1,
-    "no-string-refs": 1,
     "no-unreachable": 2,
     "use-isnan": 1,
     "valid-typeof": 1,
@@ -115,10 +114,11 @@ module.exports = {
     "react/jsx-sort-props": 0,
     "react/jsx-uses-react": 2,
     "react/jsx-uses-vars": 2,
-    "react/jsx-no-bind": 1,
+    "react/jsx-no-bind": [1, {"ignoreRefs": true}],
     "react/no-did-mount-set-state": 0, // setTimeout with setState is a valid use case
     "react/no-did-update-set-state": 2,
     "react/no-multi-comp": 0,
+    "react/no-string-refs": 1,
     "react/no-unknown-property": 2,
     "react/prop-types": 0,
     "react/sort-comp": [1, {
