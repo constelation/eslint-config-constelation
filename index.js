@@ -82,10 +82,7 @@ module.exports = {
 
     /* "object-curly-spacing": [ 2, "never" ], */
 
-    /* disabled until you can use single AND backtick (without their stipulations) */
-    /*"quotes": [ 1, "single", "avoid-escape" ],*/
-
-    "quotes": [ 0 ],
+    "quotes": [ 1, "single", {"avoidEscape": true, "allowTemplateLiterals": true} ],
     "semi-spacing": [ 2, { "before": false, "after": true } ],
     "no-multiple-empty-lines": [ 1, { "max": 2 } ],
     "no-extra-semi": 1,
@@ -110,22 +107,22 @@ module.exports = {
     "jsx-quotes": [1, "prefer-single"],
     "react/display-name": 0,
     "react/jsx-boolean-value": 1,
+    "react/jsx-closing-bracket-location": 1,
     "react/jsx-curly-spacing": [1, "never"],
-    "react/jsx-no-bind": [1, {"ignoreRefs": true}],
-    "react/jsx-no-duplicate-props": 2,
-    "react/jsx-no-undef": 2,
-    "react/jsx-sort-props": 0,
-    "react/jsx-uses-react": 2,
-    "react/jsx-uses-vars": 2,
     "react/jsx-equals-spacing": [1, "never"],
-    "react/jsx-space-before-closing": [1, "always"],
     "react/jsx-handler-names": 1,
-    "react/jsx-pascal-case": 1,
-    "react/jsx-wrap-multilines": 1,
-    "react/jsx-key": 2,
     "react/jsx-indent": [1, 2],
     "react/jsx-indent-props": [1, 2],
-    "react/jsx-closing-bracket-location": 1,
+    "react/jsx-key": 2,
+    "react/jsx-no-bind": [1, {"ignoreRefs": true}],
+    "react/jsx-no-duplicate-props": 2,
+    // "react/jsx-no-undef": 2,
+    "react/jsx-pascal-case": 1,
+    "react/jsx-sort-props": 0,
+    "react/jsx-space-before-closing": [1, "always"],
+    "react/jsx-uses-react": 2,
+    "react/jsx-uses-vars": 2,
+    "react/jsx-wrap-multilines": 1,
     "react/no-did-mount-set-state": 0, // setTimeout with setState is a valid use case
     "react/no-did-update-set-state": 2,
     "react/no-find-dom-node": 1,
@@ -133,6 +130,7 @@ module.exports = {
     "react/no-string-refs": 1,
     "react/no-unknown-property": 2,
     "react/prop-types": 0,
+    "react/self-closing-comp": 2,
     "react/sort-comp": [1, {
       order: [
         'props',
@@ -144,8 +142,6 @@ module.exports = {
       ],
     }],
     "react/sort-prop-types": [1, {"requiredFirst": true, "ignoreCase": true}],
-    "react/self-closing-comp": 2,
-    "react/wrap-multilines": 1
   }
 
 };
