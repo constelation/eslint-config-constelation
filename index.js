@@ -77,6 +77,7 @@ module.exports = {
     "no-lonely-if": 1,
     "no-spaced-func": 2,
     "no-trailing-spaces": 1,
+    "no-useless-constructor": 1,
     "one-var": [ 1, { "uninitialized": "always", "initialized": "never" } ],
 
     /* "object-curly-spacing": [ 2, "never" ], */
@@ -106,52 +107,43 @@ module.exports = {
     "yoda": 0,
     "eol-last": 0,
     "camelcase": 0,
+    "jsx-quotes": [1, "prefer-single"],
     "react/display-name": 0,
     "react/jsx-boolean-value": 1,
+    "react/jsx-curly-spacing": [1, "never"],
+    "react/jsx-no-bind": [1, {"ignoreRefs": true}],
     "react/jsx-no-duplicate-props": 2,
     "react/jsx-no-undef": 2,
-    "jsx-quotes": [1, "prefer-single"],
     "react/jsx-sort-props": 0,
     "react/jsx-uses-react": 2,
     "react/jsx-uses-vars": 2,
-    "react/jsx-no-bind": [1, {"ignoreRefs": true}],
+    "react/jsx-equals-spacing": [1, "never"],
+    "react/jsx-space-before-closing": [1, "always"],
+    "react/jsx-handler-names": 1,
+    "react/jsx-pascal-case": 1,
+    "react/jsx-wrap-multilines": 1,
+    "react/jsx-key": 2,
+    "react/jsx-indent": [1, 2],
+    "react/jsx-indent-props": [1, 2],
+    "react/jsx-closing-bracket-location": 1,
     "react/no-did-mount-set-state": 0, // setTimeout with setState is a valid use case
     "react/no-did-update-set-state": 2,
+    "react/no-find-dom-node": 1,
     "react/no-multi-comp": 0,
     "react/no-string-refs": 1,
     "react/no-unknown-property": 2,
     "react/prop-types": 0,
     "react/sort-comp": [1, {
       order: [
-        'react',
+        'props',
+        'state',
+        'static-methods',
+        'lifecycle',
         'everything-else',
         'render'
       ],
-      groups: {
-        react: [
-          'props',
-          'state',
-          'propTypes',
-          'contextTypes',
-          'childContextTypes',
-          'getDefaultProps',
-          'mixins',
-          'statics',
-          'defaultProps',
-          'constructor',
-          'state',
-          'getInitialState',
-          'getChildContext',
-          'componentWillMount',
-          'componentDidMount',
-          'componentWillReceiveProps',
-          'shouldComponentUpdate',
-          'componentWillUpdate',
-          'componentDidUpdate',
-          'componentWillUnmount'
-        ]
-      }
     }],
+    "react/sort-prop-types": [1, {"requiredFirst": true, "ignoreCase": true}],
     "react/self-closing-comp": 2,
     "react/wrap-multilines": 1
   }
