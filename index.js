@@ -117,7 +117,7 @@ module.exports = {
     "react/jsx-no-bind": [1, {"ignoreRefs": true}],
     "react/jsx-no-duplicate-props": 2,
     // "react/jsx-no-undef": 2,
-    "react/jsx-pascal-case": 1,
+    "react/jsx-pascal-case": 0,
     "react/jsx-sort-props": 0,
     "react/jsx-space-before-closing": [1, "always"],
     "react/jsx-uses-react": 2,
