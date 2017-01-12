@@ -133,10 +133,10 @@ module.exports = {
     "react/self-closing-comp": 2,
     "react/sort-comp": [1, {
       order: [
-        'props',
-        'state',
+        'type-annotations',
         'static-methods',
-        'lifecycle',
+        //'everything-else',        // someday I hope to have instance properties before lifecycle
+        //'lifecycle',              // until that time, don't check lifecycle
         'everything-else',
         'render'
       ],

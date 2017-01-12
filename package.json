@@ -1,7 +1,7 @@
 {
-  "name": "eslint-config-kylpo",
-  "version": "2.0.0",
-  "description": "Kylpo's personal eslint preset",
+  "name": "eslint-config-constelation",
+  "version": "1.0.0",
+  "description": "Constelation's eslint preset",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,12 +12,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kylpo/eslint-config-kylpo.git"
+    "url": "git+https://github.com/constelation/eslint-config-constelation.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kylpo/eslint-config-kylpo/issues"
+    "url": "https://github.com/constelation/eslint-config-constelation/issues"
   },
-  "homepage": "https://github.com/kylpo/eslint-config-kylpo#readme"
+  "homepage": "https://github.com/constelation/eslint-config-constelation#readme"
 }
