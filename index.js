@@ -20,8 +20,8 @@ module.exports = {
   "rules": {
     "no-unexpected-multiline": 1,
     "semi": [1, "never"],
-
     "comma-dangle": [ 1, "always-multiline" ],
+    "no-case-declarations": 1,
     "no-cond-assign": 1,
     "no-console": 0,
     "no-debugger": 1,
@@ -79,18 +79,14 @@ module.exports = {
     "no-trailing-spaces": 1,
     "no-useless-constructor": 1,
     "one-var": [ 1, { "uninitialized": "always", "initialized": "never" } ],
-
-    /* "object-curly-spacing": [ 2, "never" ], */
-
+    // "object-curly-spacing": [ 1, "never" ],  // still not able to specify rules for object vs destructured object
     "quotes": [ 1, "single", {"avoidEscape": true, "allowTemplateLiterals": true} ],
     "semi-spacing": [ 2, { "before": false, "after": true } ],
     "no-multiple-empty-lines": [ 1, { "max": 2 } ],
     "no-extra-semi": 1,
     "space-before-blocks": [ 1, "always" ],
     "space-before-function-paren": [ 1, { "anonymous": "always", "named": "never" } ],
-
-    /* "space-in-parens": [ 2, "always", { "exceptions": ["{}"] } ], */
-
+    // "space-in-parens": [ 1, "never" ],
     "space-infix-ops": 0,
     "space-unary-ops": [ 1, { "words": true, "nonwords": false } ],
     "arrow-spacing": [ 1, { "before": true, "after": true } ],
@@ -116,7 +112,8 @@ module.exports = {
     "react/jsx-key": 2,
     "react/jsx-no-bind": [1, {"ignoreRefs": true}],
     "react/jsx-no-duplicate-props": 2,
-    // "react/jsx-no-undef": 2,
+    "react/jsx-no-undef": 2,
+    "react/react-in-jsx-scope": 2,
     "react/jsx-pascal-case": 0,
     "react/jsx-sort-props": 0,
     "react/jsx-space-before-closing": [1, "always"],
