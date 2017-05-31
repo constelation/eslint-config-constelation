@@ -86,7 +86,7 @@ module.exports = {
     "no-extra-semi": 1,
     "space-before-blocks": [ 1, "always" ],
     "space-before-function-paren": [ 1, { "anonymous": "always", "named": "never" } ],
-    // "space-in-parens": [ 1, "never" ],
+    "space-in-parens": [ 1, "never" ],
     "space-infix-ops": 0,
     "space-unary-ops": [ 1, { "words": true, "nonwords": false } ],
     "arrow-spacing": [ 1, { "before": true, "after": true } ],
@@ -113,7 +113,7 @@ module.exports = {
     "react/jsx-indent-props": [1, 2],
     "react/jsx-key": 2,
     "react/jsx-max-props-per-line": [1, { "maximum": 1}],
-    "react/jsx-no-bind": [1, {"ignoreRefs": true}],
+    "react/jsx-no-bind": [2, {"ignoreRefs": true}],
     "react/jsx-no-duplicate-props": 2,
     "react/jsx-no-undef": 2,
     "react/jsx-pascal-case": 0,
@@ -135,7 +135,7 @@ module.exports = {
     "react/no-unknown-property": 2,
     "react/prop-types": 0,
     "react/react-in-jsx-scope": 2,
-    "react/require-default-props": 2,
+    // "react/require-default-props": 2,
     "react/self-closing-comp": 2,
     "react/sort-comp": [1, {
       order: [
