@@ -71,6 +71,7 @@ module.exports = {
 
     "indent": [1, 2, {"SwitchCase": 1}],
     "key-spacing": 1,
+    "keyword-spacing": [1, { "after": true }],
     "new-cap": [1, { "capIsNew": false }], // allow Function()
     "new-parens": 2,
     "no-array-constructor": 2,
